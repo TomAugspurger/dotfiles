@@ -1,1 +1,0 @@
-/Users/tom.augspurger/.config/nvim/init.vim
