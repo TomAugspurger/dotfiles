@@ -1,1 +1,7 @@
-/Users/tom.augspurger/.condarc
+binstar_upload: yes
+
+anaconda_upload: yes
+
+channels:
+  - conda-forge
+  - defaults
