@@ -1,5 +1,3 @@
-binstar_upload: yes
-
 anaconda_upload: yes
 
 channels:

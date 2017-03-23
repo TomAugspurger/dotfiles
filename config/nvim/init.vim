@@ -17,8 +17,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 Plug 'joom/latex-unicoder.vim'
-Plug 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'lepture/vim-jinja'
@@ -82,7 +83,8 @@ Plug 'jalvesaq/Nvim-R'
 
 " Neovim specific
 " https://github.com/kassio/neoterm/issues/95
-Plug 'kassio/neoterm', { 'commit': '9e33da0a' }
+" Plug 'kassio/neoterm', { 'commit': '9e33da0a' }
+Plug 'kassio/neoterm'
 Plug 'alvan/vim-closetag'
 Plug 'benekastah/neomake'
 Plug 'gregsexton/MatchTag'
@@ -159,7 +161,7 @@ set wildmode=longest,list,full
 set wildmenu
 
 let g:syntastic_python_python_exec = '/usr/local/bin/python3'
-let g:syntastic_python_flake8_args='--ignore=E302,E501,W391,E702,E731'
+let g:syntastic_python_flake8_args='--ignore=E302,E501,W391,E702,E731,D100,I0,D400,D10,D204,D205,D401,Q000'
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_check_on_open=0
 
@@ -223,6 +225,7 @@ let g:pandoc#filetypes#pandoc_markdown = 1
 " Auto check on save
 " let g:pymode_lint_write = 1
 
+let g:virtualenv_directory = "$HOME/Envs/"
 " Support virtualenv
 " let g:pymode_virtualenv = 1
 
@@ -292,6 +295,7 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 " autocmd BufWritePre * StripWhitespace
 
 " au BufNewFile,BufRead *.pymd setf markdown
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 
 let g:vim_markdown_math=1
 
