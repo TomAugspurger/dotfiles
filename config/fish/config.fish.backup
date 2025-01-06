@@ -1,0 +1,15 @@
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /usr/local/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+
+alias ipyhton "ipython"
+alias ipy "ipython"
+alias nb "jupyter notebook"
+alias ipk "python -m ipykernel install --user"
+alias pt "pytest"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Applications/google-cloud-sdk/path.fish.inc' ]; . '/Applications/google-cloud-sdk/path.fish.inc'; end
